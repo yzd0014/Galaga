@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"galaxywars\startup_stm32f072xb.o"
+"galaxywars\hspi.o"
+"galaxywars\main.o"
+"galaxywars\stm32f0xx_it.o"
+"galaxywars\stm32f0xx_hal_msp.o"
+"galaxywars\stm32f0xx_hal_tim.o"
+"galaxywars\stm32f0xx_hal_tim_ex.o"
+"galaxywars\stm32f0xx_hal_rcc.o"
+"galaxywars\stm32f0xx_hal_rcc_ex.o"
+"galaxywars\stm32f0xx_hal.o"
+"galaxywars\stm32f0xx_hal_i2c.o"
+"galaxywars\stm32f0xx_hal_i2c_ex.o"
+"galaxywars\stm32f0xx_hal_gpio.o"
+"galaxywars\stm32f0xx_hal_dma.o"
+"galaxywars\stm32f0xx_hal_cortex.o"
+"galaxywars\stm32f0xx_hal_pwr.o"
+"galaxywars\stm32f0xx_hal_pwr_ex.o"
+"galaxywars\stm32f0xx_hal_flash.o"
+"galaxywars\stm32f0xx_hal_flash_ex.o"
+"galaxywars\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "GalaxyWars\GalaxyWars.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GalaxyWars.map" -o GalaxyWars\GalaxyWars.axf
